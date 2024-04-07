@@ -6,7 +6,7 @@ import dns.rdtypes.ANY
 from dns.rdtypes.ANY.MX import MX
 from dns.rdtypes.ANY.SOA import SOA
 import dns.rdata
-import socketq
+import socket
 import threading
 import signal
 import os

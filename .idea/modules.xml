@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DNSServer.iml" filepath="$PROJECT_DIR$/.idea/DNSServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DNSServer.py.iml" filepath="$PROJECT_DIR$/.idea/DNSServer.py.iml" />
     </modules>
   </component>
 </project>
