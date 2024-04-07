@@ -35,8 +35,6 @@ def encrypt_with_aes(input_string, password, salt):
     f = Fernet(key)
     encrypted_data = f.encrypt(input_string.encode('utf-8'))
     return encrypted_data
-    print("Encrypted Value:", encrypted_value)
-
 
 def decrypt_with_aes(encrypted_data, password, salt):
     key = generate_aes_key(password, salt)
@@ -48,8 +46,8 @@ salt = 'Tandon'.encode('utf-8')
 password = 'sk11321@nyu.edu'
 input_string = "AlwaysWatching"
 
-encrypted_value = encrypt_with_aes(input_string, password, salt) # exfil function
-decrypted_value = decrypt_with_aes(encrypted_value, password, salt)  # exfil function
+encrypted_value = encrypt_with_aes(input_string, password, salt)
+decrypted_value = decrypt_with_aes(encrypted_value, password, salt)
 
 def generate_sha256_hash(input_string):
     sha256_hash = hashlib.sha256()
@@ -141,5 +139,3 @@ def run_dns_server_user():
 
 if __name__ == '__main__':
     run_dns_server_user()
-print("Encrypted Value:", encrypted_value)
-print("Decrypted Value:", decrypted_value)
